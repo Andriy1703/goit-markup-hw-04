@@ -136,6 +136,17 @@ border-bottom: 1px solid #E7E9FC;
     background-color:var(--primary-branddark-color);
     padding-top: 188px;
     padding-bottom:188px;
+    background-image:linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+            url(../images/people-offce.jpg);
+    background-repeat: no-repeat;
+    width: 1440px;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    
     }
 
 
@@ -197,7 +208,7 @@ border-bottom: 1px solid #E7E9FC;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-branddark-color);
-    margin-bottom: 8px;
+    
 }
 
 .section-text {
@@ -205,6 +216,17 @@ border-bottom: 1px solid #E7E9FC;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-dark-color);
+}
+.section-logo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color:#f4f4fd;
+    margin-bottom: 8px;
+    
 }
 
 /* section-2 */
