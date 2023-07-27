@@ -3,7 +3,7 @@
 :root {
 
     --primary-brand-color: #4d5ae5;
-    --primary-branddark-color: #2e2f42;
+    --primary-branddark-color: #2e2f42; 
     --primary-dark-color: #434455;
     --primary-darkdlue-color: #404bbf;
     --primary-cloud-color: #F4F4FD;
@@ -52,6 +52,8 @@ img{
 /* header section */
 .header{
 border-bottom: 1px solid #E7E9FC;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16);
 }
 .header-container{
     display: flex;
@@ -87,6 +89,7 @@ border-bottom: 1px solid #E7E9FC;
     color: var(--primary-branddark-color);
     display: flex;
     align-items: center;
+    position: relative;
 }
 .header-menu{
     display: flex;
@@ -94,14 +97,20 @@ border-bottom: 1px solid #E7E9FC;
 }
 .navigator{
     display: block;
+    position: relative;
     color: var(--primary-branddark-color);
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .navigator:hover,
 .navigator:focus {
     color: var(--primary-darkdlue-color);
+}
+.active{
+    position: relative;
+    color: #404bbf;
 }
 
 .header-address {
@@ -308,6 +317,61 @@ padding: 32px 0px;
     color:var(--primary-dark-color);
     text-align: center;
 }
+/* section-4*/
+.customer-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-section-title {
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-branddark-color);
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+
+.customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    color: #8e8f99;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .customers-link:hover,
+    .customers-link:focus{
+        border-color: #404bbf;
+        color:#404bbf;
+    }
+
+.customers-logo {
+    width: 104px;
+    height: 56px;
+    fill:currentColor;
+}
+.customers-logo:hover,
+.customers-logo:focus{
+    color: var(--primary-darkdlue-color);
+}
+
 
 /* footer section */
 .footer {
