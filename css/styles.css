@@ -583,7 +583,7 @@ margin-bottom: 72px;
     border: 1px solid transparent;
 
 }
-.company-list{250ms
+.company-list{
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
